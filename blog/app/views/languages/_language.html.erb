@@ -1,0 +1,15 @@
+<p>
+    <strong>Title:</strong>
+    <%= language.title %>
+</p>
+
+<p>
+    <strong>Level:</strong>
+    <%= language.level %>
+</p>
+
+<p>
+  <%= link_to 'Remove Language', [language.resume, language],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>
