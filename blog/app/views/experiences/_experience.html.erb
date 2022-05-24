@@ -1,0 +1,20 @@
+<p>
+    <strong>Title:</strong>
+    <%= experience.title %>
+</p>
+
+<p>
+    <strong>Time:</strong>
+    <%= experience.time %>
+</p>
+
+<p>
+    <strong>Description:</strong>
+    <%= experience.description %>
+</p>
+
+<p>
+  <%= link_to 'Remove Experience', [experience.resume, experience],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

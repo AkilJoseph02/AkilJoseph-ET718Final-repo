@@ -1,0 +1,20 @@
+<p>
+    <strong>Title:</strong>
+    <%= education.title %>
+</p>
+
+<p>
+    <strong>Time:</strong>
+    <%= education.time %>
+</p>
+
+<p>
+    <strong>Degree:</strong>
+    <%= education.degree %>
+</p>
+
+<p>
+  <%= link_to 'Remove Education', [education.resume, education],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

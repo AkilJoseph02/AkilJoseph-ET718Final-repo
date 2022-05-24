@@ -1,0 +1,17 @@
+<%= form_for([@resume, @resume.educations.build]) do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :time %><br>
+    <%= f.text_field :time %>
+  </p>
+  <p>
+    <%= f.label :degree %><br>
+    <%= f.text_area :degree %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

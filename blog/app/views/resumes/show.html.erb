@@ -42,5 +42,17 @@
 <h2>Add a language:</h2>
 <%= render 'languages/form' %>
 
+<h2>Work Experience</h2>
+<%= render @resume.experiences %>
+ 
+<h2>Add a language:</h2>
+<%= render 'experiences/form' %>
+
+<h2>Education</h2>
+<%= render @resume.educations %>
+ 
+<h2>Add a education:</h2>
+<%= render 'educations/form' %>
+
 <%= link_to 'Edit', edit_resume_path(@resume) %> |
 <%= link_to 'Back', resumes_path %>
